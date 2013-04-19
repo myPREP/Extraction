@@ -32,7 +32,7 @@ import java.util.Iterator;
 - version qui améliore la détection des phrases non-traduites
 - qui limite les phrases trop courtes
  */
-public class ExtractSMTCorpus {
+public class ExtractSMTCorpusFromTMX {
 
     static org.jdom.Document document;
     static Element racine;
@@ -77,7 +77,7 @@ public class ExtractSMTCorpus {
             totTooSmall = 0;
             totPointVirgule = 0;
             maxTuning = _maxTuning;
-            maxTuning = _maxEval;
+            maxEval = _maxEval;
             step = _step;
             langSRC = "so";
             langTAR = "ta";
@@ -270,7 +270,7 @@ public class ExtractSMTCorpus {
             }
             //System.out.println(src+"-"+tar);
         } catch (IOException ex) {
-            Logger.getLogger(ExtractSMTCorpus.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ExtractSMTCorpusFromTMX.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
