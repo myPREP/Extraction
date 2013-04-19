@@ -35,7 +35,7 @@ public class RUNExtraction {
             int step=Integer.parseInt(args[2]);
             String root=args[3];
             String bitext=args[4];
-               ExtractSMTCorpus.extract(bitext, maxtuning, maxeval, step,root);
+               ExtractSMTCorpusFromTMX.extract(bitext, maxtuning, maxeval, step,root);
         }
     }
 
